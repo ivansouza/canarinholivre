@@ -7,10 +7,11 @@
   <meta name="description" content="Camiseta open source inspirada na seleção brasileira. Design livre para qualquer pessoa usar, modificar, produzir e comercializar.">
   <style>
     :root {
-      --green: #1a6b2e;
-      --green-dark: #0d4a1e;
-      --yellow: #fdd835;
-      --yellow-dark: #f9a825;
+      --green: #009c3b;
+      --green-dark: #003319;
+      --green-light: #00b84a;
+      --yellow: #FFD700;
+      --yellow-dark: #FFB800;
       --bg: #f5f0e8;
       --text: #1a1a1a;
       --text2: #555;
@@ -80,6 +81,12 @@
       color: var(--green);
       margin-bottom: 8px;
     }
+    .card ul, .card ol {
+      margin-left: 20px;
+    }
+    .card li {
+      margin-bottom: 6px;
+    }
     .btn {
       display: inline-block;
       background: var(--green);
@@ -126,10 +133,43 @@
       text-align: center;
       margin: 0;
     }
+    .license-box {
+      background: #e8f5e9;
+      border: 2px solid var(--green);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 16px 0;
+    }
+    .license-box h3 { color: var(--green-dark); margin-bottom: 12px; }
+    .license-box .permit { color: #2e7d32; }
+    .license-box .require { color: #e65100; }
+    .license-box ul { list-style: none; padding: 0; }
+    .license-box li { padding: 4px 0; }
+    .contrib-steps {
+      counter-reset: step;
+    }
+    .contrib-steps li {
+      counter-increment: step;
+      margin-bottom: 8px;
+    }
+    .contrib-steps li::marker {
+      content: counter(step) ". ";
+      font-weight: 700;
+      color: var(--green);
+    }
     footer {
       text-align: center;
       padding: 30px 20px;
       color: var(--text2);
+      font-size: 14px;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--green-dark);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 700;
       font-size: 14px;
     }
     @media (max-width: 600px) {
@@ -146,58 +186,102 @@
   </div>
 
   <div class="logo-display">
-    <img src="../assets/logo.svg" alt="Canarinho Livre — Escudo">
+    <img src="assets/logo.svg" alt="Canarinho Livre — Escudo">
   </div>
 
   <div class="container">
     <section>
       <h2>📥 Downloads</h2>
       <div class="downloads">
-        <a href="../assets/logo.svg" class="btn" download>SVG Vetorial</a>
-        <a href="../assets/logo.png" class="btn btn-yellow" download>PNG Alta Res</a>
+        <a href="assets/logo.svg" class="btn" download>SVG Vetorial</a>
+        <a href="assets/logo.png" class="btn btn-yellow" download>PNG Alta Res</a>
       </div>
     </section>
 
     <section>
-      <h2>🎨 O Design</h2>
+      <h2>🎨 Design da Camiseta</h2>
       <div class="card">
-        <h3>Camiseta Amarela</h3>
-        <p>Cor principal amarela, com o escudo no lado esquerdo do peito (lado do coração).</p>
-      </div>
-      <div class="card">
-        <h3>Escudo Verde</h3>
-        <p>Um canarinho amarelo estilizado, com peito estufado, olhando para a direita. Acima, cinco estrelas.</p>
-      </div>
-      <div class="card">
-        <h3>Estilo Profissional</h3>
-        <p>Design limpo, vetorial, no padrão de escudos de seleções de futebol.</p>
+        <ul>
+          <li><strong>Cor principal:</strong> Amarela</li>
+          <li><strong>Posição do escudo:</strong> Lado esquerdo do peito (lado do coração)</li>
+          <li><strong>Tamanho:</strong> Padrão de emblema de seleções (médio/pequeno)</li>
+          <li><strong>Canarinho:</strong> Amarelo estilizado, peito estufado, olhando para a direita</li>
+          <li><strong>Fundo:</strong> Escudo verde</li>
+          <li><strong>Estrelas:</strong> Cinco estrelinhas amarelas acima do escudo</li>
+          <li><strong>Estilo:</strong> Limpo, vetorial e profissional</li>
+          <li><strong>Versão principal:</strong> Apenas estampa na frente (menor custo de produção)</li>
+        </ul>
       </div>
     </section>
 
-    <section class="filosofia">
+    <section>
       <h2>📜 Filosofia</h2>
       <div class="card">
-        <h3>🔓 Totalmente Open Source</h3>
-        <p>Qualquer pessoa pode copiar, modificar, fabricar e vender a camiseta. Sem registro de desenho industrial, sem direitos autorais sobre o visual.</p>
+        <ul>
+          <li>✅ Totalmente aberto e livre</li>
+          <li>✅ Qualquer pessoa ou empresa pode copiar, modificar, fabricar e vender</li>
+          <li>✅ Sem registro de marca, desenho industrial ou direitos autorais restritivos</li>
+          <li>✅ O nome "Canarinho Livre" pode ser usado livremente</li>
+        </ul>
       </div>
+    </section>
+
+    <section>
+      <h2>🌍 Open Source Fashion</h2>
       <div class="card">
-        <h3>🌍 Use Livremente</h3>
-        <p>A marca "Canarinho Livre" pode ser usada por qualquer pessoa. Faça sua versão, venda na feira, customiza — o design é seu.</p>
+        <p>O Canarinho Livre se inspira em iniciativas como:</p>
+        <ul>
+          <li><a href="https://freewear.org" target="_blank">FreeWear.org</a></li>
+          <li>Open Source Circular Fashion</li>
+          <li>ADIFF e o Fashion Open Source Manifesto</li>
+          <li>Movimento Open Design</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>⚽ O Futebol é do Povo</h3>
-        <p>A camiseta da seleção também deveria ser. Este projeto existe pra devolver ao povo o que sempre foi dele.</p>
+    </section>
+
+    <section>
+      <h2>📋 Licença</h2>
+      <div class="license-box">
+        <h3>Creative Commons CC-BY 4.0</h3>
+        <p><strong>✅ Permite:</strong></p>
+        <ul class="permit">
+          <li>✓ Usar comercialmente</li>
+          <li>✓ Modificar o design</li>
+          <li>✓ Produzir e vender quantas camisetas quiser</li>
+        </ul>
+        <p style="margin-top: 12px;"><strong>⚠️ Obrigatório apenas:</strong></p>
+        <ul class="require">
+          <li>Dar crédito ao projeto original (ex: "Baseado no design Canarinho Livre")</li>
+        </ul>
+        <p style="margin-top: 12px;">
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" class="btn btn-yellow" style="font-size:14px; padding:8px 20px;">
+            Ver licença completa
+          </a>
+        </p>
       </div>
     </section>
 
     <section>
       <h2>🛠 Como Usar</h2>
       <div class="card">
-        <ol style="margin-left: 20px;">
+        <ol class="contrib-steps">
           <li><strong>Baixe</strong> o SVG ou PNG acima</li>
           <li><strong>Leve</strong> para uma estamparia</li>
           <li><strong>Imprima</strong> em camisetas amarelas</li>
-          <li><strong>Venda</strong> ou use — sem pagar nada a ninguém</li>
+          <li><strong>Venda ou use</strong> — sem pagar nada a ninguém</li>
+          <li><strong>Crédito:</strong> Mencione "Baseado no design Canarinho Livre"</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <h2>🤝 Como Contribuir</h2>
+      <div class="card">
+        <ol class="contrib-steps">
+          <li>Faça um fork do repositório</li>
+          <li>Crie variações do design</li>
+          <li>Envie Pull Requests</li>
+          <li>Compartilhe suas camisetas com <span class="tag">#CanarinhoLivre</span></li>
         </ol>
       </div>
     </section>
@@ -212,8 +296,8 @@
   </div>
 
   <footer>
-    <p><strong>Canarinho Livre</strong> — Open source de verdade. Feito por Ivan Souza.</p>
-    <p style="margin-top: 4px;">Nenhum direito reservado. Use à vontade.</p>
+    <p><strong>Canarinho Livre</strong> — Projeto 100% livre. Copie, melhore e espalhe.</p>
+    <p style="margin-top: 4px;">Feito por Ivan Souza • Licença CC-BY 4.0</p>
   </footer>
 </body>
 </html>
