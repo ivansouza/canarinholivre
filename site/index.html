@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canarinho Livre — Camiseta Open Source</title>
+  <meta name="description" content="Camiseta open source inspirada na seleção brasileira. Design livre para qualquer pessoa usar, modificar, produzir e comercializar.">
+  <style>
+    :root {
+      --green: #1a6b2e;
+      --green-dark: #0d4a1e;
+      --yellow: #fdd835;
+      --yellow-dark: #f9a825;
+      --bg: #f5f0e8;
+      --text: #1a1a1a;
+      --text2: #555;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: var(--yellow);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+    .hero .subtitle {
+      font-size: 14px;
+      margin-top: 6px;
+      opacity: 0.7;
+    }
+    .logo-display {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .logo-display img {
+      max-width: 300px;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    section {
+      padding: 40px 0;
+    }
+    section h2 {
+      font-size: 28px;
+      color: var(--green-dark);
+      margin-bottom: 16px;
+      border-bottom: 3px solid var(--yellow);
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 16px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .card h3 {
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: background 0.2s;
+      margin: 8px 8px 8px 0;
+    }
+    .btn:hover { background: var(--green-dark); }
+    .btn-yellow {
+      background: var(--yellow);
+      color: var(--green-dark);
+    }
+    .btn-yellow:hover { background: var(--yellow-dark); }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--green);
+      color: var(--green);
+    }
+    .btn-outline:hover { background: var(--green); color: white; }
+    .filosofia {
+      background: var(--green-dark);
+      color: white;
+      text-align: center;
+    }
+    .filosofia h2 { color: var(--yellow); border-color: var(--yellow); }
+    .filosofia .card {
+      background: rgba(255,255,255,0.1);
+      color: white;
+      box-shadow: none;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .filosofia .card h3 { color: var(--yellow); }
+    .downloads {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .downloads .btn {
+      text-align: center;
+      margin: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text2);
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 28px; }
+      .downloads { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>🐦 CANARINHO LIVRE</h1>
+    <p>Camiseta open source inspirada na seleção brasileira</p>
+    <p class="subtitle">Design livre — use, modifique, produza, venda. Sem pedir licença.</p>
+  </div>
+
+  <div class="logo-display">
+    <img src="../assets/logo.svg" alt="Canarinho Livre — Escudo">
+  </div>
+
+  <div class="container">
+    <section>
+      <h2>📥 Downloads</h2>
+      <div class="downloads">
+        <a href="../assets/logo.svg" class="btn" download>SVG Vetorial</a>
+        <a href="../assets/logo.png" class="btn btn-yellow" download>PNG Alta Res</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>🎨 O Design</h2>
+      <div class="card">
+        <h3>Camiseta Amarela</h3>
+        <p>Cor principal amarela, com o escudo no lado esquerdo do peito (lado do coração).</p>
+      </div>
+      <div class="card">
+        <h3>Escudo Verde</h3>
+        <p>Um canarinho amarelo estilizado, com peito estufado, olhando para a direita. Acima, cinco estrelas.</p>
+      </div>
+      <div class="card">
+        <h3>Estilo Profissional</h3>
+        <p>Design limpo, vetorial, no padrão de escudos de seleções de futebol.</p>
+      </div>
+    </section>
+
+    <section class="filosofia">
+      <h2>📜 Filosofia</h2>
+      <div class="card">
+        <h3>🔓 Totalmente Open Source</h3>
+        <p>Qualquer pessoa pode copiar, modificar, fabricar e vender a camiseta. Sem registro de desenho industrial, sem direitos autorais sobre o visual.</p>
+      </div>
+      <div class="card">
+        <h3>🌍 Use Livremente</h3>
+        <p>A marca "Canarinho Livre" pode ser usada por qualquer pessoa. Faça sua versão, venda na feira, customiza — o design é seu.</p>
+      </div>
+      <div class="card">
+        <h3>⚽ O Futebol é do Povo</h3>
+        <p>A camiseta da seleção também deveria ser. Este projeto existe pra devolver ao povo o que sempre foi dele.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>🛠 Como Usar</h2>
+      <div class="card">
+        <ol style="margin-left: 20px;">
+          <li><strong>Baixe</strong> o SVG ou PNG acima</li>
+          <li><strong>Leve</strong> para uma estamparia</li>
+          <li><strong>Imprima</strong> em camisetas amarelas</li>
+          <li><strong>Venda</strong> ou use — sem pagar nada a ninguém</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <h2>💻 Código Fonte</h2>
+      <div class="card">
+        <p>O projeto completo está no GitHub. Contribuições são bem-vindas!</p>
+        <a href="https://github.com/ivansouza/canarinholivre" class="btn" target="_blank">🐙 GitHub</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p><strong>Canarinho Livre</strong> — Open source de verdade. Feito por Ivan Souza.</p>
+    <p style="margin-top: 4px;">Nenhum direito reservado. Use à vontade.</p>
+  </footer>
+</body>
+</html>
