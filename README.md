@@ -46,7 +46,7 @@ O Canarinho Livre se inspira em iniciativas como:
 
 ## 📋 Licença
 
-Licença oficial: **[Creative Commons CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)**
+Licença oficial: **[Creative Commons CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)**
 
 **O que isso permite:**
 - ✅ Usar comercialmente
@@ -75,7 +75,7 @@ Acesse: [https://ivansouza.github.io/canarinholivre](https://ivansouza.github.io
 ### Objetivos do Site
 
 - Hospedar os arquivos oficiais (SVG, PNG alta resolução e PDF para impressão)
-- Explicar a licença CC-BY 4.0 de forma clara
+- Explicar a licença CC-BY-SA 4.0 de forma clara
 - Mostrar fotos da camiseta em diferentes ângulos e modelos
 - Facilitar o download dos arquivos
 - Incentivar a comunidade a contribuir com variações e melhorias
